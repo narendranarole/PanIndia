@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City__c</fullName>
+    <externalId>false</externalId>
+    <label>City</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>State__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pune</fullName>
+                <default>false</default>
+                <label>Pune</label>
+            </value>
+            <value>
+                <fullName>Nagpur</fullName>
+                <default>false</default>
+                <label>Nagpur</label>
+            </value>
+            <value>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+                <label>Mumbai</label>
+            </value>
+            <value>
+                <fullName>Delhi City</fullName>
+                <default>false</default>
+                <label>Delhi City</label>
+            </value>
+            <value>
+                <fullName>Jaipur</fullName>
+                <default>false</default>
+                <label>Jaipur</label>
+            </value>
+            <value>
+                <fullName>Bangalore</fullName>
+                <default>false</default>
+                <label>Bangalore</label>
+            </value>
+            <value>
+                <fullName>Kathmandu City</fullName>
+                <default>false</default>
+                <label>Kathmandu City</label>
+            </value>
+            <value>
+                <fullName>Colombo City</fullName>
+                <default>false</default>
+                <label>Colombo City</label>
+            </value>
+            <value>
+                <fullName>Lahore City</fullName>
+                <default>false</default>
+                <label>Lahore City</label>
+            </value>
+            <value>
+                <fullName>Dhaka City</fullName>
+                <default>false</default>
+                <label>Dhaka City</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Maharashtra</controllingFieldValue>
+            <valueName>Pune</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maharashtra</controllingFieldValue>
+            <valueName>Nagpur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maharashtra</controllingFieldValue>
+            <valueName>Mumbai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Karnataka</controllingFieldValue>
+            <valueName>Bangalore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rajasthan</controllingFieldValue>
+            <valueName>Jaipur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delhi</controllingFieldValue>
+            <valueName>Delhi City</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kathmandu</controllingFieldValue>
+            <valueName>Kathmandu City</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colombo</controllingFieldValue>
+            <valueName>Colombo City</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lahore</controllingFieldValue>
+            <valueName>Lahore City</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dhaka</controllingFieldValue>
+            <valueName>Dhaka City</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

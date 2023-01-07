@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roll_up_for_Insurance_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Roll up for Insurance Status</label>
+    <summaryFilterItems>
+        <field>Insurance__c.Status__c</field>
+        <operation>equals</operation>
+        <value>In-Forced</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Insurance__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Surrendered</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Insurance__c.Insurer__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <type>Summary</type>
+</CustomField>

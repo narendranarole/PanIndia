@@ -1,0 +1,9 @@
+<template>
+    <lightning-card  title="Create Account without Apex ">
+        <lightning-input label="Id" disabled  value={accountId}></lightning-input>
+        <lightning-input label="name" onchange={handleNameChange}></lightning-input>
+        <lightning-button variant="brand" icon-name="utility:record_create" label="Create Account" onclick={handleCreateAccount}></lightning-button>
+
+    </lightning-card>
+    
+</template>

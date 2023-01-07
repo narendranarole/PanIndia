@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Applicant Registration ">
+        
+        <lightning-input type="text" data-formfield ="applicantFirstName" label="Enter First Name"></lightning-input><br/>
+        <lightning-input type="text" data-formfield ="applicantLastName" label="Enter Last Name"></lightning-input><br/>
+        <lightning-input type="date" data-formfield ="applicantDOB" label="Enter DOB"></lightning-input><br/>
+        <lightning-button variant="brand" label="Save" onclick={saveButtonHandler}></lightning-button> &nbsp;&nbsp;        
+        
+        <lightning-card title="Applicant Search  ">
+        <lightning-input type="text" data-formfield ="applicantName" label="Enter Applicant Name for Search"></lightning-input> <br/>
+        <lightning-button variant="brand" label="Search" onclick={searchButtonHandler} > </lightning-button><br/>
+       
+        <template if:true={showDetailFlag} >
+            Applicant Details are as: 
+            Applicant First Name :{applicantObj.First_Name__c}<br/>
+            Applicant Last Name :{applicantObj.Last_Name__c}<br/>
+            Applicant DOB :{applicantObj.DOB__c}<br/>
+        </template>
+       
+       
+    </lightning-card>
+    </lightning-card>
+</template>

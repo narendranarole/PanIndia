@@ -1,0 +1,23 @@
+<template>
+<lightning-card title="Simple Calculator" icon-name="utility:user">
+    <div class="slds-box"  style="border-width: 1rem;">
+    <lightning-input type="number" name="firstNumber" label="Enter First Number" value="firstNum" onchange={handleFirstNumber} ></lightning-input>
+    <lightning-input type="number"  name="secondNumber" label="Enter Second Number" value="secondNum" onchange={handleSecondtNumber} ></lightning-input>
+    </div>
+    <div class="slds-p-top_small slds-box" style="border-width: 1rem;">
+    <lightning-button-group>
+        <lightning-button  variant="brand" label="Add" onclick={handleAddEvent}></lightning-button> &nbsp;&nbsp;
+        <lightning-button  variant="brand" label="Sub" onclick={handleSubEvent}></lightning-button> &nbsp;&nbsp;
+        <lightning-button  variant="brand" label="Mul" onclick={handleMulEvent}></lightning-button> &nbsp;&nbsp;
+        <lightning-button  variant="brand" label="Div" onclick={handleDivEvent}></lightning-button> &nbsp;&nbsp;
+
+    </lightning-button-group>
+</div>
+    <template if:true={showResult}>
+        <div class="slds-box slds-theme_shade">
+            <p> Result of Operation ={finalResult}</p>
+        </div>
+    </template>
+
+</lightning-card>
+</template>

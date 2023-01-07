@@ -1,0 +1,33 @@
+<template>
+    <div class="slds-box">
+        <template if:true={contacts.data}>
+            <div class="slds-grid slds-wrap slds=gutters">
+
+                <template for:each={contacts.data} for:item="con">
+                    <div class="slds-col slds-p-arround_small slds-size_1-of-3" key={con.Id}>
+                       <lightning-card title={con.Name} >
+                       
+                            <lightning-button variant="success " label="View Details" slot="actions"></lightning-button>
+                                <p class="slds-p-horizontal_small"> Con.firstName</p>
+                                <p class="slds-p-horizontal_small"> Con.Phone</p>
+                                <p class="slds-p-horizontal_small"> Con.Email</p>
+                                <p slot="footer" >Con.Email</p>
+                            </lightning-card>
+                    </div>
+
+                </template>
+
+                <template if:false={contacts.error}> 
+                    {contacts.error.body.message}
+
+                 </template>
+            
+            </div>
+
+        </template>
+
+
+
+    </div>
+    
+</template>

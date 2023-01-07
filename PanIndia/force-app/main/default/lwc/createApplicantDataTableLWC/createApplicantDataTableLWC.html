@@ -1,0 +1,27 @@
+<template>
+
+    <lightning-card title="Applicant Data Table">
+        Selected Records = {selectedRecordCount} <BR/>
+        Total Records = {totalRecord}<BR/>
+
+        <lightning-button variant="destructive" icon-name="utility:delete" label="Delete Selected Records" onclick={deleteButtonHandler}></lightning-button><br/>
+        <lightning-input type="search" data-formfield="applicantFirstName" label="Enter First Name" onkeyup={searchRecords}></lightning-input>
+
+        <!-- Data Table : START -->
+           <template if:true={showDataTableFlag}>
+                    <lightning-datatable
+                             key-field="Id"
+                             data={appList}
+                             columns={columns}    
+                             draft-values={draftValues} 
+                             onrowselection={selectedRecordsHandler}                     
+        > 
+                    </lightning-datatable>
+            </template>
+              
+
+
+    </lightning-card>
+    
+    
+</template>

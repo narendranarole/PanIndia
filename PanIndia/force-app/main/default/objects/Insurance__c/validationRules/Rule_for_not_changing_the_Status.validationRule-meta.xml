@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rule_for_not_changing_the_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( Status__c ,&apos;Surrendered&apos;),  ISCHANGED( Status__c ), ISCHANGED( Insurance_Type__c ))</errorConditionFormula>
+    <errorMessage>To avoid users editing the status fro surrendered to any other values and also restrict the field Insurance Type</errorMessage>
+</ValidationRule>
